@@ -1,6 +1,5 @@
-import {auth, signInWithGooglePopUp, createUserDocumentFromAuth} from '../../utils/firebase/firebase.utils'
-import { useEffect } from 'react';
-import { getRedirectResult } from 'firebase/auth';
+import {signInWithGooglePopUp, createUserDocumentFromAuth} from '../../utils/firebase/firebase.utils'
+
 
 import SignUpForm from '../../components/sign-up-form/sign-up-form.component'
 
