@@ -30,7 +30,7 @@ provider.setCustomParameters({
 })
 
 export const auth = getAuth();
-export const signInWithGooglePopUp = () => signInWithPopup(auth, provider);
+export const signInWithGooglePopup = () => signInWithPopup(auth, provider);
 
 export const db = getFirestore();
 
@@ -72,6 +72,6 @@ export const signInAuthUserWithEmailAndPassword = async(email, password) => {
     if (!email || !password) {
         return ;
     }
-    return await signInAuthUserWithEmailAndPassword(auth, email, password);   
+    return await signInWithEmailAndPassword(auth, email, password);   
 }
 
